@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pass Task 7.1</string>
+    <string name="create_a_new_advert">CREATE A NEW ADVERT</string>
+    <string name="show_all_lost_amp_found_items"><![CDATA[SHOW ALL LOST & FOUND ITEMS]]></string>
+    <string name="enter_date">Enter Date</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="description">Description:</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="phone">Phone:</string>
+    <string name="post_type">Post Type:</string>
+    <string name="found">Found</string>
+    <string name="lost">Lost</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="name">Name:</string>
+    <string name="save">SAVE</string>
+    <string name="date">Date:</string>
+    <string name="enter_location">Enter Location</string>
+</resources>
