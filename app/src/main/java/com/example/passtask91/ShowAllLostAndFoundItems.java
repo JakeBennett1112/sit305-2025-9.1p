@@ -1,6 +1,5 @@
-package com.example.passtask71;
+package com.example.passtask91;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -8,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.passtask71.data.DatabaseHelper;
-import com.example.passtask71.model.Advert;
+import com.example.passtask91.data.DatabaseHelper;
+import com.example.passtask91.model.Advert;
 
 import java.util.List;
 

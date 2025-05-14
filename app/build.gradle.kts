@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.passtask71"
+    namespace = "com.example.passtask91"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.passtask71"
+        applicationId = "com.example.passtask91"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -33,11 +33,16 @@ android {
 
 dependencies {
 
+    implementation("com.google.android.libraries.places:places:3.5.0")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

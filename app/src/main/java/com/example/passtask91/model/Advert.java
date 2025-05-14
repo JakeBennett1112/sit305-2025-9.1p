@@ -1,9 +1,13 @@
-package com.example.passtask71.model;
+package com.example.passtask91.model;
 
 public class Advert {
     // Variables for the item
     private String item_name, item_description, item_date, item_location;
     private int item_phone;
+
+    // new variables to hold latitude and longitude of the item
+    private double latitude;
+    private double longitude;
 
     // Constructor
     public Advert (String item_name, String item_description, String item_date, String item_location, int item_phone) {
@@ -12,6 +16,8 @@ public class Advert {
         this.item_date = item_date;
         this.item_location = item_location;
         this.item_phone = item_phone;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
 
@@ -60,5 +66,22 @@ public class Advert {
 
     public void setItem_phone(int item_phone) {
         this.item_phone = item_phone;
+    }
+
+    // set and get latitude and longitude
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 }

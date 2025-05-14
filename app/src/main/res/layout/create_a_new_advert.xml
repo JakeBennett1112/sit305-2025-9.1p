@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     android:background="#F2F2F2">
 
-<!--    <TextView
-        android:id="@+id/locationInput"
-        android:layout_width="333dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="39dp"
-        android:outlineAmbientShadowColor="@color/black"
-        android:text="Enter Location"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LocationText" />-->
-
     <EditText
         android:id="@+id/locationInput"
         android:layout_width="333dp"
@@ -47,21 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionInput" />
-
-<!--    <TextView
-        android:id="@+id/dateInput"
-        android:layout_width="333dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="12dp"
-        android:outlineAmbientShadowColor="@color/black"
-        android:text="Enter Date"
-        app:layout_constraintBottom_toTopOf="@+id/LocationText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateText" />-->
 
     <EditText
         android:id="@+id/dateInput"
@@ -92,20 +64,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateInput" />
 
-<!--    <TextView
-        android:id="@+id/descriptionInput"
-        android:layout_width="330dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="12dp"
-        android:outlineAmbientShadowColor="@color/black"
-        android:text="Enter Description"
-        app:layout_constraintBottom_toTopOf="@+id/dateText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />-->
 
     <EditText
         android:id="@+id/descriptionInput"
@@ -137,21 +95,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneInput" />
 
-<!--    <TextView
-        android:id="@+id/phoneInput"
-        android:layout_width="333dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="12dp"
-        android:outlineAmbientShadowColor="@color/black"
-        android:text="Enter Phone Number"
-        app:layout_constraintBottom_toTopOf="@+id/descriptionText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneText" />-->
-
     <EditText
         android:id="@+id/phoneInput"
         android:layout_width="333dp"
@@ -181,21 +124,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NameInput" />
-
-    <!--    <TextView-->
-<!--        android:id="@+id/NameInput"-->
-<!--        android:layout_width="333dp"-->
-<!--        android:layout_height="29dp"-->
-<!--        android:layout_marginStart="37dp"-->
-<!--        android:layout_marginTop="6dp"-->
-<!--        android:layout_marginEnd="39dp"-->
-<!--        android:layout_marginBottom="12dp"-->
-<!--        android:outlineAmbientShadowColor="@color/black"-->
-<!--        android:text="Enter Name"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/phoneText"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/NameText" />-->
 
     <TextView
         android:id="@+id/postTypeText"
@@ -271,16 +199,28 @@
 
     <Button
         android:id="@+id/saveButton"
-        android:layout_width="222dp"
-        android:layout_height="64dp"
+        android:layout_width="113dp"
+        android:layout_height="62dp"
         android:layout_marginStart="94dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="95dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="28dp"
         android:text="@string/save"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationInput" />
+
+    <Button
+        android:id="@+id/currentLocationButton"
+        android:layout_width="173dp"
+        android:layout_height="61dp"
+        android:text="GET CURRENT LOCATION"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

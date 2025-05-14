@@ -1,4 +1,4 @@
-package com.example.passtask71;
+package com.example.passtask91;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.passtask71.model.Advert;
+import com.example.passtask91.model.Advert;
 
 import java.util.List;
 
@@ -64,7 +64,7 @@ public class AdvertAdapter extends RecyclerView.Adapter<AdvertAdapter.AdvertView
         // whenwe click an item we want to move to remove the item
         // get name, date and location to put into the file
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(context, RemoveTheItem.class);
+            Intent intent = new Intent(context, com.example.passtask91.RemoveTheItem.class);
             intent.putExtra("name", advert.getItem_name());
             intent.putExtra("date", advert.getItem_date());
             intent.putExtra("location", advert.getItem_location());

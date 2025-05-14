@@ -1,4 +1,4 @@
-package com.example.passtask71.data;
+package com.example.passtask91.data;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import com.example.passtask71.model.Advert;
-import com.example.passtask71.util.Util;
+import com.example.passtask91.model.Advert;
+import com.example.passtask91.util.Util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + Util.ITEM_DESCRIPTION + " TEXT, "
                 + Util.ITEM_DATE + " TEXT, "
                 + Util.ITEM_LOCATION + " TEXT, "
-                + Util.ITEM_PHONE + " INTEGER)";
+                + Util.ITEM_PHONE + " INTEGER)"
+                ;
         // execute the query
         db.execSQL(CREATE_ITEM_TABLE);
 

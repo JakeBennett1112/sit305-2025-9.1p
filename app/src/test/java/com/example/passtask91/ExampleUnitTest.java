@@ -1,4 +1,4 @@
-package com.example.passtask71;
+package com.example.passtask91;
 
 import org.junit.Test;
 

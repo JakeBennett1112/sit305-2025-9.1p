@@ -1,4 +1,4 @@
-package com.example.passtask71;
+package com.example.passtask91;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     // create button variable for new advert
     private Button newAdvertButton;
     private Button showItemsButtton;
+    private Button showOnMapButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Get id of buttons
         newAdvertButton = findViewById(R.id.NewAdvertButton);
         showItemsButtton = findViewById(R.id.ShowItemsButton);
+        showOnMapButton = findViewById(R.id.showOnMapButton);
 
         // create on click listener for when someone clicks the button
         // Use an intent to start and open another screen, in this case the new activity screen
@@ -47,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ShowAllLostAndFoundItems.class);
+                startActivity(intent);
+            }
+        });
+
+        // Create an onclick to move to show on map
+        showOnMapButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, showAllLostAndFoundItemsOnMap.class);
                 startActivity(intent);
             }
         });
